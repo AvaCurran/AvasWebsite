@@ -1,3 +1,4 @@
+/* main_styles.css */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -26,6 +27,7 @@ header .logo h1 {
     font-weight: 700;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -45,10 +47,12 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: #ff99cc;
 }
 
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ff99cc, #ff66b2);
     color: #fff;
@@ -66,12 +70,27 @@ nav ul li a:hover {
     margin: 0;
 }
 
+/* General Section */
 section {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.content {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #ff66b2;
+    margin-top: 0;
+}
+
+/* Social Icons */
 .social-icons {
     text-align: center;
     margin: 20px 0;
@@ -89,19 +108,7 @@ section {
     color: #ff99cc;
 }
 
-.content {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content h2 {
-    color: #ff66b2;
-    margin-top: 0;
-}
-
+/* Footer */
 footer {
     background-color: #ff66b2;
     color: #fff;
@@ -113,6 +120,7 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
